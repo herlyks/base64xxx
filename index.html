@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>base64xxx</title>
+</head>
+<body>
+  <script src="base64xxx.js"></script>
+  <input type="text" id="key" placeholder="Key" style="display: block;">
+  <textarea id="input" placeholder="String" cols="100" rows="10"></textarea>
+  <textarea id="output" placeholder="Encoded" cols="100" rows="10"></textarea>
+  <button onclick="encode()">encode</button>
+  <button onclick="decode()">decode</button>
+  <script>
+	function encode() {
+	  var str = document.getElementById('input').value;
+	  var key = document.getElementById('key').value;
+	  var result = xxx.encode(str, key);
+	  document.getElementById('output').value = result;
+	}
+	
+	function decode() {
+	  var str = document.getElementById('output').value;
+	  var key = document.getElementById('key').value;
+	  var result = xxx.decode(str, key);
+	  document.getElementById('input').value = result;
+	}
+  </script>
+</body>
+</html>
